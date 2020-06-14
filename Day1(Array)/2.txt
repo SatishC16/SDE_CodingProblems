@@ -1,0 +1,24 @@
+Sort an array of 0s, 1s and 2s
+
+Given an array A of size N containing 0s, 1s, and 2s; you need to sort the array in ascending order.
+
+Output: 
+For each testcase, print the sorted array.
+
+Example:
+Input :
+2
+5
+0 2 1 2 0
+3
+0 1 0
+Output:
+0 0 1 2 2
+0 0 1
+
+Explanation:
+Testcase 1: After segragating the 0s, 1s and 2s, we have 0 0 1 2 2 which shown in the output.
+
+SOLUTION: See 2.cpp
+
+EDITORIAL: geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
