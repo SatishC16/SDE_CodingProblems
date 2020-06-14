@@ -27,45 +27,5 @@ Explanation:
 Testcase 1: N=4 and all elements from 0 to (N-1 = 3) are present in the given array. Therefore output is -1.
 Testcase 2: 2 and 3 occur more than once in the given array.
 
-SOLUTION:
-#include <bits/stdc++.h>
-using namespace std;
-vector<int> duplicates(int arr[], int n);
-int main() {
-    int t;
-    cin >> t;
-    while (t-- > 0) {
-        int n;
-        cin >> n;
-        int a[n];
-        for (int i = 0; i < n; i++) cin >> a[i];
-        vector<int> ans = duplicates(a, n);
-        for (int i : ans) cout << i << ' ';
-        cout << endl;
-    }
-    return 0;
-}
-// Driver Code Ends
-
-vector<int> duplicates(int a[], int n) {
-    // code here
-    vector<int> ans;
-    int c = 1;
-    
-    for(int i=0; i<n; ++i){
-        int ind = a[i] % n;
-        a[ind] += n;
-    }
-    
-    for(int i=0; i<n; ++i){
-        if(a[i]/n > 1){
-            ans.push_back(i);
-            c=0;
-        }
-    }
-
-        if(c){
-            ans.push_back(-1);
-        }
-    return ans;
-}
+SOLUTION: 1.cpp
+EDITORIAL: https://www.geeksforgeeks.org/duplicates-array-using-o1-extra-space-set-2/
