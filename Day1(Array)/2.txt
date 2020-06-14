@@ -20,5 +20,4 @@ Explanation:
 Testcase 1: After segragating the 0s, 1s and 2s, we have 0 0 1 2 2 which shown in the output.
 
 SOLUTION: See 2.cpp
-
 EDITORIAL: geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
